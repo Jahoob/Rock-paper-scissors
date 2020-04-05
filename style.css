@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(40, 146, 179, 0.4), rgba(21, 59, 17, 0.4)),  url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    font-family: Lato;
+    font-weight: 300;
+}
+
+.content {
+    width: 1000px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(197, 142, 60, 0.8);
+    box-shadow: 0px 0px 50px rgba(161, 44, 44, 0.8);
+    border-radius: 30px;
+}
+
+.headline {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    font-size: 50px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.headline span {
+    position: absolute;
+    display: block;
+    font-size: 30px;
+    letter-spacing: normal;
+    left: 50%;
+    margin-top: 30px;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.player-0,
+.player-1 {
+    height: 600px;
+    width: 50%;
+    padding: 50px;
+    text-align: center;
+    align-items: center;
+}
+
+.player-name {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.player-score {
+    font-size: 60px;
+    color: #2054a1;
+}
+
+.active {
+    background: rgba(197, 142, 60, 0.8);
+    border-radius: 30px 0px  0px 30px;
+}
+
+.active .player-name::after {
+    content: "\2022";
+    color: #2054a1;
+}
+
+.outcome {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #2054a1;
+}
+
+.icons {
+    display: inline-block;
+}
+
+.images img {
+    height: 200px;
+    width: 200px;
+    margin: 350px 30px 0px;
+    border: 2px solid black;
+    border-radius: 290px;
+    cursor: pointer;
+    background-image: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+}
+
+.images img:hover {
+    border: 2px dashed black;
+    box-shadow: 0 0 10px rgba(255,255,255,1),
+    0 0 20px rgba(255,255,255,1),
+    0 0 30px rgba(255,255,255,1),
+    0 0 0 75px rgba(255,255,255,0.05),
+    0 0 0 60px rgba(255,255,255,0.05),
+    0 0 0 50px rgba(255,255,255,0.05),
+    0 0 0 40px rgba(255,255,255,0.05),
+    0 0 0 30px rgba(255,255,255,0.05);
+    transition: 0.3s;
+ 
+}
+
+.images {
+    position: absolute;
+}
+
