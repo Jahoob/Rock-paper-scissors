@@ -15,7 +15,8 @@ body {
 }
 
 .content {
-    width: 1000px;
+    width: 90%;
+    max-width: 1300px;
     position: absolute;
     display: flex;
     align-items: center;
@@ -39,17 +40,6 @@ body {
     transform: translate(-50%, -50%);
     z-index: 1000;
 }
-
-/* .headline span {
-    position: absolute;
-    display: block;
-    font-size: 30px;
-    letter-spacing: normal;
-    left: 50%;
-    margin-top: 30px;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-} */
 
 .player-0,
 .player-1 {
@@ -104,7 +94,7 @@ body {
     width: 200px;
     margin: 350px 30px 0px;
     border: 2px solid black;
-    border-radius: 290px;
+    border-radius: 100%;
     cursor: pointer;
     background-image: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
 }
@@ -112,13 +102,13 @@ body {
 .icons img:hover {
     border: 2px dashed black;
     box-shadow: 0 0 10px rgba(255,255,255,1),
-    0 0 20px rgba(255,255,255,1),
-    0 0 30px rgba(255,255,255,1),
-    0 0 0 75px rgba(255,255,255,0.05),
-    0 0 0 60px rgba(255,255,255,0.05),
+    0 0 15px rgba(255,255,255,1),
+    0 0 25px rgba(255,255,255,1),
+    0 0 0 65px rgba(255,255,255,0.05),
     0 0 0 50px rgba(255,255,255,0.05),
     0 0 0 40px rgba(255,255,255,0.05),
-    0 0 0 30px rgba(255,255,255,0.05);
+    0 0 0 32px rgba(255,255,255,0.05),
+    0 0 0 25px rgba(255,255,255,0.05);
     transition: 0.3s;
 }
 
@@ -140,3 +130,230 @@ body {
     border: 4px solid #464646;
     box-shadow: 0 0 10px #25292b;
 }
+
+@media  (max-width: 1200px) {
+    .content {
+        max-width: 1000px;
+    }
+    .headline {
+        font-size: 40px;
+        top: 10%;
+    }
+    .player-0,
+    .player-1 {
+        height: 550px;
+        padding: 45px;
+    }
+    .player-name {
+        font-size: 35px;
+        margin-top: 2px;
+        margin-bottom: 4px;
+    }
+    .player-score {
+        font-size: 40px;
+    }
+    .outcome {
+        font-size: 25px;
+    }
+    .icons img {
+        height: 180px;
+        width: 180px;
+        margin: 320px 20px 0px;
+    }
+    .icons img:hover {
+        box-shadow: 0 0 5px rgba(255,255,255,1),
+        0 0 10px rgba(255,255,255,1),
+        0 0 15px rgba(255,255,255,1),
+        0 0 0 35px rgba(255,255,255,0.05),
+        0 0 0 30px rgba(255,255,255,0.05),
+        0 0 0 25px rgba(255,255,255,0.05),
+        0 0 0 20px rgba(255,255,255,0.05),
+        0 0 0 15px rgba(255,255,255,0.05);
+        transition: 0.3s;
+    }
+    .result {
+        font-size: 5px;
+    }
+    }
+
+@media  (max-width: 992px) {
+    .content {
+        max-width: 900px;
+    }
+    .headline {
+        font-size: 35px;
+        top: 10%;
+    }
+    .player-0,
+    .player-1 {
+        height: 500px;
+        padding: 25px;
+    }
+     .player-name {
+        font-size: 30px;
+        margin-top: 10px;
+        margin-bottom: 4px;
+    }
+    .player-score {
+        font-size: 25px;
+    }
+    .outcome {
+        font-weight: 900;
+    }
+    .icons img {
+        height: 180px;
+        width: 180px;
+        margin: 280px 15px 0px;
+    }
+    .icons img:hover {
+        box-shadow: 0 0 5px rgba(255,255,255,1),
+        0 0 10px rgba(255,255,255,1),
+        0 0 15px rgba(255,255,255,1),
+        0 0 0 35px rgba(255,255,255,0.05),
+        0 0 0 30px rgba(255,255,255,0.05),
+        0 0 0 25px rgba(255,255,255,0.05),
+        0 0 0 20px rgba(255,255,255,0.05),
+        0 0 0 15px rgba(255,255,255,0.05);
+        transition: 0.3s;
+    }
+    .result {
+        font-size: 5px;
+    }
+    }
+
+@media  (max-width: 768px) {
+    .content {
+        max-width: 700px;
+    }
+    .headline {
+        font-size: 35px;
+        top: 10%;
+    }
+    .player-0,
+    .player-1 {
+        height: 400px;
+        padding: 25px;
+    }
+    .player-name {
+        font-size: 25px;
+        margin-top: 2px;
+        margin-bottom: 4px;
+    }
+    .player-score {
+        font-size: 30px;
+    }
+    .outcome {
+        font-size: 20px;
+    }
+    .icons img {
+        height: 130px;
+        width: 130px;
+        margin: 200px 20px 0px;
+    }
+    .icons img:hover {
+        box-shadow: 0 0 5px rgba(255,255,255,1),
+        0 0 10px rgba(255,255,255,1),
+        0 0 15px rgba(255,255,255,1),
+        0 0 0 35px rgba(255,255,255,0.05),
+        0 0 0 30px rgba(255,255,255,0.05),
+        0 0 0 25px rgba(255,255,255,0.05),
+        0 0 0 20px rgba(255,255,255,0.05),
+        0 0 0 15px rgba(255,255,255,0.05);
+        transition: 0.3s;
+    }
+    .result {
+        font-size: 5px;
+    }
+}
+
+@media  (max-width: 576px) {
+.content {
+    max-width: 500px;
+}
+.headline {
+    font-size: 35px;
+    top: 20%;
+}
+.player-0,
+.player-1 {
+    height: 300px;
+    padding: 15px;
+}
+.player-name {
+    font-size: 20px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+.player-score {
+    font-size: 20px;
+}
+.outcome {
+    font-weight: 900;
+    font-size: 18px;
+}
+.icons img {
+    height: 110px;
+    width: 110px;
+    margin: 170px 5px 0px;
+}
+.icons img:hover {
+    box-shadow: 0 0 5px rgba(255,255,255,1),
+    0 0 10px rgba(255,255,255,1),
+    0 0 15px rgba(255,255,255,1),
+    0 0 0 35px rgba(255,255,255,0.05),
+    0 0 0 30px rgba(255,255,255,0.05),
+    0 0 0 25px rgba(255,255,255,0.05),
+    0 0 0 20px rgba(255,255,255,0.05),
+    0 0 0 15px rgba(255,255,255,0.05);
+    transition: 0.3s;
+}
+.result {
+    font-size: 5px;
+}
+}
+
+@media  (max-width: 480px) {
+    .content {
+        max-width: 400px;
+    }
+    .headline {
+        font-size: 25px;
+        top: 20%;
+    }
+    .player-0,
+    .player-1 {
+        height: 300px;
+        padding: 15px;
+    }
+    .player-name {
+        font-size: 20px;
+        margin-top: 2px;
+        margin-bottom: 4px;
+    }
+    .player-score {
+        font-size: 20px;
+    }
+    .outcome {
+        font-weight: 900;
+        font-size: 18px;
+    }
+    .icons img {
+        height: 95px;
+        width: 95px;
+        margin: 170px 5px 0px;
+    }
+    .icons img:hover {
+        box-shadow: 0 0 5px rgba(255,255,255,1),
+        0 0 10px rgba(255,255,255,1),
+        0 0 15px rgba(255,255,255,1),
+        0 0 0 35px rgba(255,255,255,0.05),
+        0 0 0 30px rgba(255,255,255,0.05),
+        0 0 0 25px rgba(255,255,255,0.05),
+        0 0 0 20px rgba(255,255,255,0.05),
+        0 0 0 15px rgba(255,255,255,0.05);
+        transition: 0.3s;
+    }
+    .result {
+        font-size: 5px;
+    }
+    }       

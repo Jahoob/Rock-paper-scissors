@@ -22,7 +22,7 @@ function convertToWord(letter) {
 }
 
 function win(playerChoice, computerChoice) {
-    const smallPlayerScore = 'user'.fontsize(3).sup();
+    const smallPlayerScore = 'player'.fontsize(3).sup();
     const smallComputerScore = 'comp'.fontsize(3).sup();
     const playerChoice_div = document.getElementById(playerChoice);
     playerScore++;
@@ -34,7 +34,7 @@ function win(playerChoice, computerChoice) {
 }
 
 function lose(playerChoice, computerChoice) {
-    const smallPlayerScore = 'user'.fontsize(3).sup();
+    const smallPlayerScore = 'player'.fontsize(3).sup();
     const smallComputerScore = 'comp'.fontsize(3).sup();
     // const playerChoice_div = document.getElementById(playerChoice);
     computerScore++;
@@ -47,7 +47,7 @@ function lose(playerChoice, computerChoice) {
 
 function draw(playerChoice, computerChoice) {
     // const playerChoice_div = document.getElementById(playerChoice);
-    const smallPlayerScore = 'user'.fontsize(3).sup();
+    const smallPlayerScore = 'player'.fontsize(3).sup();
     const smallComputerScore = 'comp'.fontsize(3).sup();
     outcome.innerHTML = `${convertToWord(playerChoice)}${smallPlayerScore} equals ${convertToWord(computerChoice)}${smallComputerScore}. It's a draw!`;
     // playerChoice_div.classList.add('gray-glow');
@@ -83,7 +83,10 @@ function main() {
 
 main();
 
-
+let h1 = document.getElementById('outcome');
+h1.insertAdjacentHTML('afterend',
+    '<p class="result">PLAYE111</p>');
+document.write(smallPlayerScore.fontsize(1));
 
 
 
